@@ -1,0 +1,68 @@
+.popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 90vh;
+    margin-top: 20px;
+}
+
+.popular h1 {
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.popular hr {
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+}
+
+.popular-item {
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 1024px) {
+    .popular h1 {
+        font-size: 40px; /* Reduce font size for tablets */
+    }
+
+    .popular-item {
+        flex-wrap: wrap; /* Allow items to wrap for smaller screens */
+        gap: 20px; /* Reduce the gap between items */
+        justify-content: center; /* Center items */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .popular {
+        height: auto; /* Allow the height to adjust on smaller screens */
+        padding: 0 20px; /* Add padding for better spacing */
+    }
+
+    .popular h1 {
+        font-size: 30px; /* Smaller font size for mobile */
+    }
+
+    .popular-item {
+        flex-direction: column; /* Stack items vertically on mobile */
+        align-items: center; /* Center items vertically */
+        gap: 20px; /* Adjust the gap */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .popular h1 {
+        font-size: 26px; /* Further reduce font size on mobile */
+    }
+
+    .popular-item {
+        flex-direction: column; /* Stack items vertically */
+        gap: 15px; /* Reduce gap */
+    }
+}

@@ -1,0 +1,155 @@
+/* Main container for description box */
+.descriptionbox {
+    margin: 120px 170px;
+    padding: 20px;
+    border: 1px solid #D0D0D0;
+    background-color: #FFF;
+}
+
+/* Navigator bar at the top */
+.descriptionbox-navigator {
+    display: flex;
+    gap: 10px; /* Space between navigator boxes */
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+}
+
+/* Styling for individual navigation boxes */
+.descriptionbox-nav-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    width: 171px;
+    height: 70px;
+    border: 1px solid #D0D0D0;
+    background: #FBFBFB;
+    transition: background 0.3s ease;
+}
+
+/* Styling for active/inactive state of navigation box */
+.descriptionbox-nav-box-fade {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    width: 171px;
+    height: 70px;
+    border: 1px solid #D0D0D0;
+    background: #FBFBFB;
+    transition: background 0.3s ease;
+}
+
+/* Active navigation box */
+.descriptionbox-nav-box:hover, .descriptionbox-nav-box-active {
+    background-color: #EFEFEF;
+    color: #333;
+}
+
+/* Description box itself */
+.descriptionbox-description {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border: 1px solid #D0D0D0;
+    padding: 48px;
+    padding-bottom: 70px;
+    background-color: #FFF;
+}
+
+/* Title inside description box */
+.descriptionbox-description h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Paragraph text inside description box */
+.descriptionbox-description p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1024px) {
+    .descriptionbox {
+        margin: 100px 50px;
+        padding: 15px;
+    }
+
+    .descriptionbox-nav-box {
+        width: 150px;
+        height: 60px;
+        font-size: 14px;
+    }
+
+    .descriptionbox-description {
+        padding: 36px;
+    }
+
+    .descriptionbox-description h1 {
+        font-size: 22px;
+    }
+
+    .descriptionbox-description p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .descriptionbox {
+        margin: 80px 20px;
+        padding: 10px;
+    }
+
+    .descriptionbox-nav-box {
+        width: 130px;
+        height: 50px;
+        font-size: 12px;
+    }
+
+    .descriptionbox-description {
+        padding: 20px;
+    }
+
+    .descriptionbox-description h1 {
+        font-size: 20px;
+    }
+
+    .descriptionbox-description p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .descriptionbox {
+        margin: 50px 10px;
+        padding: 10px;
+    }
+
+    .descriptionbox-navigator {
+        gap: 5px;
+    }
+
+    .descriptionbox-nav-box {
+        width: 100px;
+        height: 40px;
+        font-size: 10px;
+    }
+
+    .descriptionbox-description {
+        padding: 15px;
+    }
+
+    .descriptionbox-description h1 {
+        font-size: 18px;
+    }
+
+    .descriptionbox-description p {
+        font-size: 12px;
+    }
+}

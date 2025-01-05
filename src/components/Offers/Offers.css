@@ -1,0 +1,119 @@
+.offers {
+    width: 65%;
+    height: 60vh;
+    display: flex;
+    margin: auto;
+    padding: 0px 140px;
+    margin-bottom: 150px;
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    margin-top: 20px;
+}
+
+.offers-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.offers-left h1 {
+    color: #171717;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.offers-left p {
+    color: #171717;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.offers-left button {
+    width: 282px;
+    height: 70px;
+    border-radius: 35px;
+    background: #ff4141;
+    border: none;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.offers-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 50px;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 1024px) {
+    .offers {
+        width: 80%; /* Adjust width for smaller devices */
+        padding: 0px 40px; /* Reduce padding */
+    }
+
+    .offers-left h1 {
+        font-size: 60px; /* Reduce font size for tablets */
+    }
+
+    .offers-left p {
+        font-size: 20px; /* Smaller text for tablets */
+    }
+
+    .offers-left button {
+        width: 250px; /* Narrow button for smaller screens */
+    }
+
+    .offers-right {
+        padding-top: 30px; /* Reduce top padding for smaller screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .offers {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    .offers-left h1 {
+        font-size: 50px; /* Reduce font size further */
+    }
+
+    .offers-left p {
+        font-size: 18px; /* Smaller paragraph text */
+    }
+
+    .offers-left button {
+        width: 230px; /* Reduce button size */
+    }
+
+    .offers-right {
+        display: none; /* Hide image or content on smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .offers {
+        width: 95%; /* Full width on mobile */
+        padding: 0px 20px; /* Reduce padding for mobile */
+    }
+
+    .offers-left h1 {
+        font-size: 40px; /* Further reduce heading size for mobile */
+    }
+
+    .offers-left p {
+        font-size: 16px; /* Smaller paragraph text */
+    }
+
+    .offers-left button {
+        width: 200px; /* Adjust button width */
+    }
+
+    .offers-right {
+        display: none; /* Hide the right section entirely on mobile */
+    }
+}
